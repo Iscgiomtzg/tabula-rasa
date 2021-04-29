@@ -1,0 +1,32 @@
+.fixSideNav{
+  position: fixed;
+  top: 89px;
+  left: 0;
+  height: 100%;
+  width: 15%;
+}
+
+.sideNav{
+  padding: 5px 5px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+li{
+  list-style: none;
+}
+
+.collapse{
+
+}
+
+
+a {
+  color: rgb(182, 173, 173);
+  text-decoration: none;
+}
+
+a :hover {
+
+  color: #ffffff;
+}

@@ -1,0 +1,72 @@
+<aside class="fixSideNav sideNav">
+  <div class="scroll">
+    <nav class="sideNav">
+      <ul>
+        <a routerLink="" class="collapse">
+        <li>What is Angular?</li>
+        </a>
+        <li (click)="onCollapse()">
+            <span class="">Getting Started With Angular</span>
+            <i class="fas fa-chevron-right" [ngClass]="onCollapse()"></i>
+            <ul class="">
+              <li><a routerLink="/add-navigation">Adding Navigation </a></li>
+              <li><a routerLink="/manage-data">Managing Data</a></li>
+              <li><a routerLink="/using-forms">Using forms for user Input</a></li>
+              <li><a routerLink="/deploying-app">Deploying an Application</a></li>
+            </ul> 
+        </li>
+        <li>          
+            <span class="">Understanding Angular</span>
+            <i class="fas fa-chevron-right"></i>
+            <ul class="">
+              <li><a routerLink="/components">Components</a></li>
+              <li><a routerLink="/templates">Templates</a></li>
+              <li><a routerLink="/directives">Directives</a></li>
+              <li><a routerLink="/dependency-injection">Dependency Injection</a></li>
+            </ul>
+        </li>
+        <li> 
+          <span class="">Developer Guides</span>
+          <i class="fas fa-chevron-right"></i>
+          <ul class="">
+            <li><a routerLink="/routing-nav">Routing & Navigation</a></li>
+            <li><a routerLink="/forms">Forms</a></li>
+            <li><a routerLink="/http-client">HTTP Client</a></li>
+            <li><a routerLink="/testing">Testing</a></li>
+            <li><a routerLink="/internationalization">Internationalization</a></li>
+            <li><a routerLink="/animations">Animations</a></li>
+            <li><a routerLink="/schematics">Schematics</a></li>
+            <li><a routerLink="/service-workers">Service Workers & PWA</a></li>
+          </ul>
+        </li>
+        <li>          
+          <span class="">Best Practices</span>
+          <i class="fas fa-chevron-right"></i>
+          <ul class="">
+            <li><a routerLink="/security">Security</a></li>
+            <li><a routerLink="/accessibility">Accessibility</a></li>
+            <li><a routerLink="/up-to-date">Keeping Up-To-Date</a></li>
+            <li><a routerLink="/property-binding">Property Binding Best Practices</a></li>
+            <li><a routerLink="/lazy-loading">Lazy Loading Feature Modules</a></li>
+          </ul>
+        </li>
+        <li>   
+          <span class="">Angular Tools</span>
+          <i class="fas fa-chevron-right"></i>
+          <ul class="">
+            <li><a routerLink="/add-navigation">Dev Workflow</a></li>
+          </ul>
+        </li>
+        <li>       
+          <span class="hide-menu">Tutorials</span>
+          <i class="fas fa-chevron-right"></i>
+          <ul class="">
+            <li><a routerLink="/routing">Routing</a></li>
+            <li><a routerLink="/template-forms">Template Driven Forms</a></li>
+            <li><a routerLink="/web-workers">Web Workers</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
