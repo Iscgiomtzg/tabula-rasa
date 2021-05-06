@@ -1,0 +1,16 @@
+<div style="margin-left: 6%;">
+  <form style="height: auto; margin-top: 1%; margin-bottom: 3%;" class="text-center" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div style="display: inline-grid; margin-bottom: 1%;">
+      <label for="title">Título</label>
+      <input style="width: 400px;" id="title" type="text" formControlName="title" placeholder="Aquí va el título de tu artículo..." required>
+    </div>
+    <quill-editor 
+    class="content-editor " 
+    [placeholder]="'Empieza a redactar'"   
+    theme="snow"
+    formControlName="control"
+    required
+    ></quill-editor>
+    <button style="margin-top: 2%; padding: 1% 2%; font-size: larger;" class="btn btn-primary" type="submit" [disabled]="!form.valid">Agregar</button>
+  </form>
+</div>

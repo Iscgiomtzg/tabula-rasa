@@ -1,5 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+
 :root{
   font-family: 'Roboto', sans-serif;
   overflow-y: scroll;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  font-size: 15px;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.item{
+  background-color: #a1a3a7;
+  color: #f4f4f4;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+
+.ql-container.ql-snow {
+  height: auto !important;
+}
+
+.ql-editor {
+  height: 500px !important;
+  overflow-y: scroll !important;
 }

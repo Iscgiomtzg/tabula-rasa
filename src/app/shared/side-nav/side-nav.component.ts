@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RedactService } from 'src/app/services/write/redact.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,14 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent implements OnInit {
-
-  constructor() { }
+  public list;
+  constructor(private redactService: RedactService) { }
 
   ngOnInit(): void {
+    this.list = this.redactService.getPosts();
   }
 
-  onCollapse(){
-    console.log('Se tiene que expandir');
+  sendIndex(i){
+    // Colocar esto en un servicio
+    localStorage.setItem('indexOfPost', i);
+    setTimeout(()=> window.location.reload(), 1);
   }
-
 }
